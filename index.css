@@ -1,0 +1,251 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*выше прописан сброс дефолтных стилей браузера*/
+
+
+.body {
+  margin-left: 250px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 98px;
+  padding-right: 165px;
+  max-width: 1000px;
+  max-height: 223px;
+  margin: 0;
+}  
+h1 { 
+  margin-left: 276px;
+  margin-top: 69px;
+    font-size: 60px;
+  line-height: 18px;
+  color: #50372b;
+  font-style: italic;
+  font-family: "Georgia";
+  position: absolute;
+  word-spacing: 0.7em;
+}
+
+.img-roga {
+  margin-left: 411px;
+  margin-top: 28px;
+  max-height: 170px;
+}
+
+.header-text1 {
+  font-size: 21px;
+  line-height: 17px;
+  color: #000000;
+  font-family: "Arial";
+  vertical-align: middle;
+  position: absolute;
+  margin-left: 98px;
+  margin-top: 130px;
+  opacity: .3;
+}
+
+.header-text2 {
+  font-size: 21px;
+  line-height: 17px;
+  color: #000000;
+  font-family: "Arial";
+  position: absolute;
+  margin-left: 566px;
+  margin-top: 130px;
+  opacity: .3;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  padding-left: 23px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-right: 25px;
+  margin-left: 150px;
+  background-color: rgb(178, 128, 56);
+  font-size: 18px;
+  line-height: 17px;
+  color: #ffffff;
+  font-family: "Arial";
+  position: relative;
+}
+
+.div-history {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  width: 1000px;
+  padding-left: 55px;
+  background: linear-gradient(rgb(236, 236, 236), rgb(255, 255, 255));
+  padding-bottom: 40px;
+  padding-right: 50px;
+  margin-top: -10px;
+}
+
+.h-history {
+  position: absolute;
+  font-size: 30px;
+line-height: 17px;
+color: #50372b;
+font-style: italic;
+font-family: "Georgia";
+margin-top: 50px;
+
+}
+
+.p1 {
+  position: static;
+  margin-left: 0;
+  margin-top: 91px; 
+  font-size: 14px;
+line-height: 18px;
+color: #000000;
+font-family: "Arial";
+max-width: 522px;
+max-height: 193px;
+}
+
+.img-old {
+  max-width: 301px;
+  max-height: 231px;
+  margin-top: 50px;
+}
+
+.inline {
+  border-bottom: 1px solid #000;
+  max-width: 900px;
+  margin-left: 150px;
+}
+
+
+.ul-info {
+  display: flex;
+  justify-content: start;
+  padding-left: 55px;
+  padding-top: 38px;
+  padding-right: 50px;
+  max-width: 1000px;
+  margin-left: 100px;
+  text-align: start;
+}
+
+.h-horns {
+  font-size: 30px;
+  line-height: 17px;
+  color: #50372b;
+  font-style: italic;
+  font-family: "Georgia";
+  margin-bottom: 0;
+  margin-right: 56px;
+}
+
+.h-hooves {
+  float: left;
+  font-size: 30px;
+  line-height: 17px;
+  color: #50372b;
+  font-style: italic;
+  font-family: "Georgia";
+  margin-bottom: 0;
+  margin-left: 56px;
+}
+
+.h-ach {
+  float: left;
+  font-size: 30px;
+  line-height: 17px;
+  color: #50372b;
+  font-style: italic;
+  font-family: "Georgia";
+  margin-bottom: 0;
+  margin-left: 56px;
+}
+
+.p2 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  font-family: "Arial";
+  margin-top: 25px;
+  margin-bottom: 44px;
+  max-width: 246px;
+}
+.p3 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  font-family: "Arial";
+  margin-top: 40px;
+  margin-bottom: 44px;
+  max-width: 246px;
+  margin-left: 56px;
+}
+
+
+.p4 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  font-family: "Arial";
+  margin-top: 40px;
+  margin-bottom: 44px;
+  max-width: 246px;
+  margin-left: 56px;
+}
+
+.inline2 {
+  border-bottom: 10px solid rgb(107, 107, 107);
+  width: 900px;
+  margin-left: 150px;
+}
+
+.footer {
+  display: flex;
+  margin-left: 100px;
+  max-width: 1000px;
+  padding-left: 49px;
+  padding-top: 28px;
+  
+}
+.h-legend {
+  font-size: 32px;
+line-height: 9px;
+color: #6a6a6a;
+font-style: italic;
+font-family: "Georgia";
+}
+
+.p5 {
+  font-size: 13px;
+line-height: 15px;
+color: #6a6a6a;
+font-family: "Arial";
+margin-top: 30px;
+margin-left: -220px;
+max-width: 359px;
+}
