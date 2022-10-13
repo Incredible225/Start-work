@@ -24,23 +24,39 @@ img {
 /*выше прописан сброс дефолтных стилей браузера*/
 
 
+@media (max-width:1000px) {
+  .body {
+    max-width: 900px;
+  }
+}
+
+@media (max-width:909px) {
+  .body {
+    max-width: 480px;
+  }
+}
+
+@media (max-width:489px) {
+  .body {
+    max-width: none;
+  }
+}
+
 .body {
-  margin-left: 250px;
+  max-width: 1000px;
+  margin: 0px auto;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
-  padding-left: 98px;
-  padding-right: 165px;
-  max-width: 1000px;
+  flex-direction: column;
+  align-items: center;
   max-height: 223px;
-  margin: 0;
 }  
 h1 { 
-  margin-left: 276px;
-  margin-top: 69px;
-    font-size: 60px;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 60px;
   line-height: 18px;
   color: #50372b;
   font-style: italic;
@@ -50,43 +66,41 @@ h1 {
 }
 
 .img-roga {
-  margin-left: 411px;
-  margin-top: 28px;
-  max-height: 170px;
+ margin: 0 auto;
+}
+
+.header_text {
+  font-size: 21px;
+  line-height: 17px;
+  color: #000000;
+  font-family: "Arial";
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  opacity: .3;
 }
 
 .header-text1 {
-  font-size: 21px;
-  line-height: 17px;
-  color: #000000;
-  font-family: "Arial";
-  vertical-align: middle;
-  position: absolute;
-  margin-left: 98px;
-  margin-top: 130px;
-  opacity: .3;
+  width: 450px;
+  text-align: center;
 }
 
 .header-text2 {
-  font-size: 21px;
-  line-height: 17px;
-  color: #000000;
-  font-family: "Arial";
-  position: absolute;
-  margin-left: 566px;
-  margin-top: 130px;
-  opacity: .3;
+  width: 450px;
+  text-align: center;
 }
 
-.line {
+
+
+.row {
   display: flex;
-  justify-content: space-between;
-  max-width: 900px;
-  padding-left: 23px;
-  padding-top: 18px;
-  padding-bottom: 16px;
-  padding-right: 25px;
-  margin-left: 150px;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
+  width: 90%;
   background-color: rgb(178, 128, 56);
   font-size: 18px;
   line-height: 17px;
@@ -98,8 +112,6 @@ h1 {
 .div-history {
   display: flex;
   justify-content: space-between;
-  margin-left: 100px;
-  width: 1000px;
   padding-left: 55px;
   background: linear-gradient(rgb(236, 236, 236), rgb(255, 255, 255));
   padding-bottom: 40px;
@@ -107,7 +119,7 @@ h1 {
   margin-top: -10px;
 }
 
-.h-history {
+.div-history-title {
   position: absolute;
   font-size: 30px;
 line-height: 17px;
@@ -115,10 +127,9 @@ color: #50372b;
 font-style: italic;
 font-family: "Georgia";
 margin-top: 50px;
-
 }
 
-.p1 {
+.div-history-text {
   position: static;
   margin-left: 0;
   margin-top: 91px; 
@@ -127,7 +138,6 @@ line-height: 18px;
 color: #000000;
 font-family: "Arial";
 max-width: 522px;
-max-height: 193px;
 }
 
 .img-old {
@@ -136,116 +146,78 @@ max-height: 193px;
   margin-top: 50px;
 }
 
-.inline {
+.line1 {
   border-bottom: 1px solid #000;
-  max-width: 900px;
-  margin-left: 150px;
+  max-width: 90%;
+  margin: auto;
+
 }
 
 
-.ul-info {
+.midle {
   display: flex;
-  justify-content: start;
   padding-left: 55px;
   padding-top: 38px;
   padding-right: 50px;
-  max-width: 1000px;
-  margin-left: 100px;
-  text-align: start;
+  max-width: 100%;
+  margin: 0 -3%;
+ 
 }
 
-.h-horns {
+.midle_content {
+  max-width: 246px;
+  margin: 0 3%;
+  margin-bottom: 44px;
+}
+
+.midle-title {
   font-size: 30px;
   line-height: 17px;
   color: #50372b;
   font-style: italic;
   font-family: "Georgia";
   margin-bottom: 0;
-  margin-right: 56px;
+  
 }
 
-.h-hooves {
-  float: left;
-  font-size: 30px;
-  line-height: 17px;
-  color: #50372b;
-  font-style: italic;
-  font-family: "Georgia";
-  margin-bottom: 0;
-  margin-left: 56px;
-}
-
-.h-ach {
-  float: left;
-  font-size: 30px;
-  line-height: 17px;
-  color: #50372b;
-  font-style: italic;
-  font-family: "Georgia";
-  margin-bottom: 0;
-  margin-left: 56px;
-}
-
-.p2 {
+.midle-text{
   font-size: 14px;
   line-height: 18px;
   color: #000000;
   font-family: "Arial";
-  margin-top: 25px;
-  margin-bottom: 44px;
-  max-width: 246px;
-}
-.p3 {
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  font-family: "Arial";
-  margin-top: 40px;
-  margin-bottom: 44px;
-  max-width: 246px;
-  margin-left: 56px;
+  margin-top: 22px;
+  
 }
 
-
-.p4 {
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  font-family: "Arial";
-  margin-top: 40px;
-  margin-bottom: 44px;
-  max-width: 246px;
-  margin-left: 56px;
-}
-
-.inline2 {
+.line2 {
   border-bottom: 10px solid rgb(107, 107, 107);
-  width: 900px;
-  margin-left: 150px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
   display: flex;
-  margin-left: 100px;
-  max-width: 1000px;
   padding-left: 49px;
   padding-top: 28px;
   
 }
-.h-legend {
+.footer-title {
   font-size: 32px;
 line-height: 9px;
 color: #6a6a6a;
 font-style: italic;
 font-family: "Georgia";
+
 }
 
-.p5 {
+.footer-text {
   font-size: 13px;
 line-height: 15px;
+text-align: start;
 color: #6a6a6a;
 font-family: "Arial";
-margin-top: 30px;
-margin-left: -220px;
+padding-top: 30px;
 max-width: 359px;
+margin-left: -23%;
 }
