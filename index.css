@@ -24,34 +24,15 @@ img {
 /*выше прописан сброс дефолтных стилей браузера*/
 
 
-@media (max-width:1000px) {
-  .body {
-    max-width: 900px;
-  }
-}
-
-@media (max-width:909px) {
-  .body {
-    max-width: 480px;
-  }
-}
-
-@media (max-width:489px) {
-  .body {
-    max-width: none;
-  }
-}
-
 .body {
   max-width: 1000px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 223px;
 }  
 h1 { 
   margin-left: 50px;
@@ -64,7 +45,9 @@ h1 {
   position: absolute;
   word-spacing: 0.7em;
 }
-
+.Pl {
+display:none;
+}
 .img-roga {
  margin: 0 auto;
 }
@@ -76,18 +59,20 @@ h1 {
   font-family: "Arial";
   position: absolute;
   display: flex;
-  justify-content: space-evenly;
   margin-top: 100px;
   opacity: .3;
+  width: 900px;
+  margin-left: -10px;
 }
 
 .header-text1 {
-  width: 450px;
+  width: 80%;
   text-align: center;
+  
 }
 
 .header-text2 {
-  width: 450px;
+  width: 80%;
   text-align: center;
 }
 
@@ -96,7 +81,6 @@ h1 {
 .row {
   display: flex;
   margin: auto;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 3em;
@@ -140,7 +124,7 @@ font-family: "Arial";
 max-width: 522px;
 }
 
-.img-old {
+.img2 {
   max-width: 301px;
   max-height: 231px;
   margin-top: 50px;
@@ -156,18 +140,18 @@ max-width: 522px;
 
 .midle {
   display: flex;
+  flex-direction: row;
   padding-left: 55px;
   padding-top: 38px;
   padding-right: 50px;
   max-width: 100%;
-  margin: 0 -3%;
- 
 }
 
 .midle_content {
-  max-width: 246px;
-  margin: 0 3%;
-  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  margin-bottom: 3%;
 }
 
 .midle-title {
@@ -176,7 +160,7 @@ max-width: 522px;
   color: #50372b;
   font-style: italic;
   font-family: "Georgia";
-  margin-bottom: 0;
+  margin-bottom: 15px;
   
 }
 
@@ -185,39 +169,153 @@ max-width: 522px;
   line-height: 18px;
   color: #000000;
   font-family: "Arial";
-  margin-top: 22px;
+  margin: -2;
+  
+  width: 87%;
   
 }
 
 .line2 {
   border-bottom: 10px solid rgb(107, 107, 107);
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  
 }
 
 .footer {
+  margin-top: 3%;
   display: flex;
-  padding-left: 49px;
-  padding-top: 28px;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 90%;
   
 }
 .footer-title {
   font-size: 32px;
-line-height: 9px;
-color: #6a6a6a;
-font-style: italic;
-font-family: "Georgia";
-
+  line-height: 9px;
+  color: #6a6a6a;
+  font-style: italic;
+  font-family: "Georgia";
+  margin: 0px 0px 20px 0px;
 }
 
 .footer-text {
-  font-size: 13px;
-line-height: 15px;
-text-align: start;
-color: #6a6a6a;
-font-family: "Arial";
-padding-top: 30px;
-max-width: 359px;
-margin-left: -23%;
+  width: 42%;
+    font-size: 13px;
+    font-family: Arial;
+    font-weight:100;
+    color: #6B6B6B;
+}
+
+@media (max-width:930px) {
+  .body {
+    max-width: 900px;
+  }
+  .img2 {
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+  .header_text {
+    display: none;
+  }
+  .Pl {
+    display: flex;
+    font-size: 60px;
+    line-height: 18px;
+    color: #50372b;
+    font-style: italic;
+    font-family: "Georgia";
+    position: absolute;
+    word-spacing: 0.7em;
+    margin-top: 80px;
+    margin-left: 100px;
+  }
+
+  .row {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 2em;
+    width: 90%;
+    background-color: rgb(178, 128, 56);
+    font-size: 10px;
+    line-height: 17px;
+    color: #ffffff;
+    font-family: "Arial";
+    position: relative;
+  }
+ 
+  .div-history {
+    display: flex;
+    padding: 0px auto;
+    width: 100%;
+    background: linear-gradient(rgb(236, 236, 236), rgb(255, 255, 255));
+  }
+
+  .div-history-title {
+  text-align: center;
+  }
+
+  .div-history-text {
+    max-width: 800px;
+  }
+
+}
+
+
+@media (max-width:489px) {
+  .body {
+    max-width: 480px;
+  }
+  h1 {
+    display: none;
+  }
+  .Pl {
+    display: none;
+  }
+  
+  .img-roga {
+    max-width: 20%;
+  }
+  .row-burger {
+    display: block;
+    position: relative;
+    max-width: 30px;
+    max-height: 20px;
+  }
+  .row-title {
+    display: none;
+  }
+  .row {
+    height: 3em;
+  }
+
+  .div-history {
+    display: flex;
+    padding: 0 0 0 20px;
+    width: 100%;
+    background: linear-gradient(rgb(236, 236, 236), rgb(255, 255, 255));
+  }
+
+  .midle {
+    display: flex;
+    flex-direction: column;
+    padding: 38px 0 0 20px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .midle_content {
+    margin-bottom: 10%;
+  }
+
+  .midle-title {
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-align: center;
+  }
 }
